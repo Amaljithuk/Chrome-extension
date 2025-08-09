@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "New Tab Page Customizer",
+  "version": "1.0",
+  "description": "Replaces the default new tab page with a custom one.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://picsum.photos/",
+    "https://fastly.picsum.photos/"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; img-src 'self' https://picsum.photos/ https://fastly.picsum.photos/;"
+  }
+}

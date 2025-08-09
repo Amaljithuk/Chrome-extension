@@ -1,0 +1,26 @@
+/* style.css */
+body {
+  /* The background-image line is now gone */
+  background-image: none; /* It's good practice to have a default */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #333; /* Added a fallback color */
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#quote-container {
+  font-style: italic;
+}
